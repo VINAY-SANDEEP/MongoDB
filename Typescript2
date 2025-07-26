@@ -1,0 +1,61 @@
+function add(a: number, b: number): number {
+
+    return a + b;
+
+}
+
+// Function with string parameter and return type
+
+function greet(name: string): string {
+
+    return `Hello, ${name}!`;
+
+}
+
+// Function with boolean return type
+
+function isEven(num: number): boolean {
+
+    return num % 2 === 0;
+
+}
+
+// Function with void return type
+
+function printInfo(name: string, age: number): void {
+
+    console.log(`Name: ${name}, Age: ${age}`);
+
+}
+
+// Function with multiple parameter types
+
+function calculateArea(length: number, width: number): number {
+
+    return length * width;
+
+}
+
+
+
+// Calling the functions with sample inputs and printing the results
+
+console.log("Function Output Demonstration:");
+
+let sum = add(10, 5);
+
+console.log(`Sum of 10 and 5 is: ${sum}`);
+
+let msg = greet("Aditya");
+
+console.log(msg);
+
+let checkEven = isEven(7);
+
+console.log(`Is 7 even? ${checkEven}`);
+
+printInfo("Alice", 22);
+
+let area = calculateArea(4, 6);
+
+console.log(`Area of rectangle (4x6): ${area}`);
