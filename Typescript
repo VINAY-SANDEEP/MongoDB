@@ -1,0 +1,91 @@
+let num: number = 42;
+
+let userName: string = "Alice";
+
+let isActive: boolean = true;
+
+console.log("Simple Types:");
+
+console.log("Number:", num);
+
+console.log("User Name:", userName);
+
+console.log("Is Active:", isActive);
+
+
+
+// Special Types
+
+let anyValue: any = "Can be anything";
+
+let unknownValue: unknown = 123;
+
+let notAssigned: undefined = undefined;
+
+let missing: null = null;
+
+console.log("\nSpecial Types:");
+
+console.log("Any Value:", anyValue);
+
+console.log("Unknown Value:", unknownValue);
+
+console.log("Undefined Value:", notAssigned);
+
+console.log("Null Value:", missing);
+
+
+
+// Arrays and Tuples
+
+let list: number[] = [1, 2, 3];
+
+let tuple: [string, number] = ["age", 25];
+
+console.log("\nArrays and Tuples:");
+
+console.log("List:", list);
+
+console.log("Tuple:", tuple);
+
+
+
+// Enum Type
+
+enum Color { Red, Green, Blue }
+
+let c: Color = Color.Green;
+
+console.log("\nEnum Type:");
+
+console.log("Enum Value (Green):", c);
+
+
+
+// Never and Void Types
+
+function error(message: string): never {
+
+    throw new Error(message);
+
+}
+
+
+
+function log(message: string): void {
+
+    console.log("Log Function:", message);
+
+}
+
+
+
+// Calling the log function (DO NOT CALL error() unless testing exception)
+
+log("This is a test message.");
+
+
+
+// If you uncomment this line, it will throw an error and stop the program
+
+// error("This is an error");
